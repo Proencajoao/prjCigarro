@@ -1,0 +1,7 @@
+{
+  "name": "prjCigarro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
