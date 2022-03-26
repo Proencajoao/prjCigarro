@@ -1,20 +1,36 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Calculo de tempo perdido
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p>Informe a quantia de cigarros fumados por dia</p>
+    <input type="number" [(ngModel)]="quantidadeCigarro">
+
+    <br>
+
+    <p>Informe há quantia de anos que fumando</p>
+    <input type="number" [(ngModel)]="quantidadeAnos">
+
+    <br> <br>
+
+    <button (click)="calculo()">Enviar</button>
+
+    <br> <br>
+    
+    <p> Tempo perdido de vida por conta do cigarro?</p>
+
+    <h3>{{totalMinutosP}} minutos</h3>
+    <h3>{{totalHorasP}} horas</h3>
+    <h3>{{totalDiasP}} dias</h3>
+    <h3>{{totalMesesP}} meses</h3>
+    <h3>{{totalAnoP}} ano(s)</h3>
+
   </div>
+
 </ion-content>
